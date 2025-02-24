@@ -1,0 +1,27 @@
+#card1, #card2 {   
+    position: relative;
+    animation-name: ltor;
+    animation-duration: 2s;
+}
+#card4 {   
+    position: relative;
+    animation-name: rtol;
+    animation-duration: 2s;
+}
+#card3 {   
+    position: relative;
+    animation-name: fades;
+    animation-duration: 2s;
+}
+@keyframes ltor {
+    0%   {left:-200px; opacity:.1;}
+    100% {left:0px;opacity:1;}
+  }
+@keyframes rtol {
+    0%   {right:-200px; opacity:.1;}
+    100% {right:0px;opacity:1;}
+}
+@keyframes fades {
+    0%   {bottom:-200px; opacity:.1;}
+    100% {bottom:0px;opacity:1;}
+}
