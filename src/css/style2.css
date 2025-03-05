@@ -1,0 +1,122 @@
+#content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "arial";
+    margin: 5% 10% 1% 10%;
+    height:900px;
+}
+#qualif{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#other-skills, #work-exp{
+  border-radius: 30px;
+  /* background-color: rgba(164, 163, 163, 0.074); */
+  margin: 10px 5px 10px 5px;
+  color: #ffffffbf;
+}
+#other-skills, #work-exp {
+  font-family: "Pacifico";
+  margin: 10px 5px 10px 5px;
+  height: 800px;
+  width: 710px;
+}
+
+#content2 h1{
+    /* border: 2px solid red; */
+}
+.accordionChild {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: max-height 1s ease, opacity 1s ease, visibility 1s 1s;
+}
+.accordionChild ul{
+  padding-left:50px;
+}
+
+.accordionChild.show {
+  max-height: 300px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+.accordionChild.qualCollapse {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+#accordion1 .card {
+  background: transparent;
+  color: #ffffffbf;
+}
+#accordion1 .card-header {
+  background: #bb8c15;
+  color: #ffffffbf;
+}
+#accordion1 .card-header:hover {
+  background: #bb8c15;
+  color: black;
+  font-size: 18px;
+}
+#accordion1 .card-body {
+  background: #bb8c15;
+  height: 300px;
+  padding: 20px; 
+  border: none;
+  display: flex; 
+  color: #ffffffbf;
+  align-items: center;
+  position: relative;
+}
+#accordion1 .card-body::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 90%, #926a06); /* Subtle gradient */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 4s spin linear infinite;
+}
+.card-header a {
+  color: #ffffffbf;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+}
+.li-title {
+  font-size: 25px;
+  padding: 8px 0px 8px 0px;
+}
+.li-child {
+  font-size: 20px;
+}
+#content2 h1{
+  font-family: "Pacifico";
+  color: #bb8c15;
+  padding-bottom:20px;
+}
+#mySvg1{
+  position:relative; 
+  transform: translateY(-10px);
+  width: 80%;
+  height: 50px;
+
+}
+#svg1Contain{
+  margin: 10px 0px 20px 0px;
+  height:20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+  

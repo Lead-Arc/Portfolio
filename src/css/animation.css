@@ -1,0 +1,16 @@
+@keyframes expandShrink {
+    0%, 100% {
+        width: 30%;
+    }
+    50% {
+        width: 80%;
+    }
+}
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+} 

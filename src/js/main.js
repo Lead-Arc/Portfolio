@@ -57,4 +57,75 @@ document.addEventListener("DOMContentLoaded", function() {
             element.style.top = `${Math.min(adjustedTop, maxY)}px`;
         });
     }
+
+    const mediaQuery = window.matchMedia("(max-width: 1800px)");
+    const collapseButton = document.getElementById("btncollapse");
+    const collapseContent = document.getElementById("coll");
+
+    function handleScreenChange(event) {
+        if (event.matches) {
+            // The screen is small
+            collapseContent.classList.remove("show");
+            collapseButton.style.display = "block";
+        } else {
+            // The screen is large
+            collapseContent.classList.add("show");
+            collapseButton.style.display = "none";
+        }
+    }
+
+    // Run the handler on initial page load
+    handleScreenChange(mediaQuery);
+    // Listen for changes in screen size
+    mediaQuery.addEventListener("change", handleScreenChange);
+
+    collapseButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        // Toggle the text between "See More.." and "See Less.."
+        if (collapseButton.innerText == "See Less..") {
+            collapseButton.textContent = "See More.."; // Text when collapsed
+        } else {
+            collapseButton.textContent = "See Less.."; // Text when expanded
+        }
+    });
+
+    // const sr = ScrollReveal({
+    //     origin:'top',
+    //     distance:'1000px',
+    //     duration:2500,
+    //     delay:100,
+    //     reset:true
+    // });
+    // sr.reveal('#card3')
+    // sr.reveal('#card1',{origin:'left',delay:100})
+    // sr.reveal('#card2',{origin:'left',delay:100})  
+
+    // Select all accordion headers
+    const accordionHeaders = document.querySelectorAll('.card-header');
+
+    // Loop through each header
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            // Get the body of the clicked header
+            const accordionBody = this.nextElementSibling;
+
+            // Close all other accordion bodies and add qualCollapse class
+            const allBodies = document.querySelectorAll('.accordionChild');
+            allBodies.forEach(body => {
+                if (body !== accordionBody) {
+                    body.classList.remove('show'); // Remove 'show' from other bodies
+                    body.classList.add('qualCollapse'); // Add 'qualCollapse' to hide them
+                }
+            });
+
+            // Toggle the clicked accordion body
+            if (accordionBody.classList.contains('qualCollapse')) {
+                accordionBody.classList.remove('qualCollapse');
+                accordionBody.classList.add('show'); // Add 'show' to display the clicked body
+            } else {
+                accordionBody.classList.remove('show');
+                accordionBody.classList.add('qualCollapse'); // Add 'qualCollapse' to hide it
+            }
+        });
+    });
 });

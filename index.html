@@ -3,77 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <link rel="icon" href="pictures/logoBlack.png"  type="image/png">
+    <link rel="icon" href="pictures/logoBlack.png" type="image/png">
     <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
     <link href="src/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/nav.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style2.css">
+    <link rel="stylesheet" href="src/css/respo.css">
+    <link rel="stylesheet" href="src/css/animation.css">
     <!-- <link rel="stylesheet" href="src/css/loading.css"> -->
     <title>My Profile</title>
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="nav" id="draggableNav">
-        
-            <ul class="nav__list">
-                <li>
-                    <a class="nav__link" href="#">
-                        <img src="pictures/logoWhite.png" alt="Avatar Logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link" id="about" title="About me">
-                        <i class="bi bi-person-circle"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link" id="backg" title="Qualification">
-                        <i class="bi bi-briefcase"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link" id="inthob" title="Interests & Hobbies">
-                        <i class="bi bi-camera"></i>
-                    </a>
-                </li>
-            </ul>
-</nav>
-<!-- Container for the main content -->
-<div class="container-fluid">
-    <div id="content1" class="d-flex justify-content-center">
-        <!-- Profile -->
-            <div>
+    <!-- Navigation Bar -->
+    <nav class="nav" id="draggableNav">
+        <ul class="nav__list">
+            <li>
+                <a class="nav__link" href="#">
+                    <img src="pictures/logoWhite.png" alt="Avatar Logo">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav__link" id="about" title="About me">
+                    <i class="bi bi-person-circle"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav__link" id="backg" title="Qualification">
+                    <i class="bi bi-briefcase"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav__link" id="inthob" title="Interests & Hobbies">
+                    <i class="bi bi-camera"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Container for the main content -->
+    <div class="container-fluid">
+         <!-- Profile -->
+        <div id="content1" class="d-flex justify-content-center">
+            <div id="box1" class="align-self-stretch">
                 <div id="card1">
-                    <h2 class="d-flex justify-content-center p-0 m-0"><div id="online"></div>&nbsp;Arnold DC</h2>
+                    <h2 class="d-flex justify-content-center p-0 m-0" style="font-family: 'Pacifico';"><div id="online"></div>&nbsp;<strong>Arnold DC</strong></h2>
                     <div class="hr-container">
                         <hr class="animated-hr">
                     </div>
-                    <div class="d-flex justify-content-center align-items-center m-0"><img id="myimage1" src="pictures/animatedProf1.jpg" alt="Profile Picture"/></div>
+                    <div class="d-flex justify-content-center align-items-center m-0">
+                        <div id= "profpic">
+                            <img id="myimage1" src="pictures/ako32.jpg.png" alt="Profile Picture"/>
+                        </div>
+                    </div>
                     <div class="hr-container">
                         <hr class="animated-hr">
                     </div>
                     <ul class="contacts">
                         <li>
                             <span style="margin-right: 10px;"><i class="bi bi-envelope"></i></span>
-                            Email: arnold.dc.it@gmail.com
+                            &nbsp; <a href="mailto:arnold.dc.it@gmail.com">arnold.dc.it@gmail.com</a>
                         </li>
                         <li>
                             <span style="margin-right: 10px;"><i class="bi bi-telephone"></i></span>
-                            Contact no.: +63 961 288 5782
+                            &nbsp; <a href="#">+63 961 288 5782</a> 
                         </li>
                         <li>
                             <span style="margin-right: 10px;"><i class="bi bi-linkedin"></i></span>
-                            LinkedIn: in/arnolddc24
+                            &nbsp; <a href="https://www.linkedin.com/in/arnolddc24" target="_blank"> in/arnolddc24</a>
                         </li>
                         <li>
                             <span style="margin-right: 10px;"><i class="bi bi-facebook"></i></span>
-                            FB: facebook.com/acel.dc
+                            &nbsp; <a href="https://www.facebook.com/acel.dc" target="_blank"> facebook.com/acel.dc</a>
                         </li>
                     </ul>
                     <div class="p-2" style="display: flex; justify-content: center;">
-                        <button id="btnCV">Download CV</button>
-                    </div>  
-                </div>  
+                        <a role ="button" id="btnCV" href="docs/ArnoldDelaCruz_CV.docx" download>Download CV</a>
+                    </div>
+                </div>
                 <div id="card2">
                     <h3>Technologies</h3>
                     <div class="image-grid">
@@ -88,76 +94,167 @@
                         <img src="pictures/photoshop.png" alt="Photoshop Logo" title="Photoshop">
                         <img src="pictures/msoffice.png" alt="Microsoft Office Logo" title="Microsoft Office">
                     </div>
-                     
-                </div>   
+                </div>
             </div>
-            <div class = "flex-grow">
+            <div id="box2">
                 <div id="card3">
-                    <h2 class="d-flex justify-content-center p-0 m-0"><div id="online"></div>&nbsp;Arnold DC</h2>
-                    <div class="hr-container">
-                        <hr class="animated-hr">
-                    </div>
-                    <div class="d-flex justify-content-center p-0 m-0"><img id="myimage1" src="pictures/animatedProf1.jpg" alt="Profile Picture" style="width:10%"> </div>
-                    <div class="hr-container">
-                        <hr class="animated-hr">
-                    </div>
-                    <ul style="list-style-type: none;">
-                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
-                            <span style="margin-right: 10px;"><i class="bi bi-envelope"></i></span>
-                            Email: arnold.dc.it@gmail.com
-                        </li>
-                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
-                            <span style="margin-right: 10px;"><i class="bi bi-telephone"></i></span>
-                            Contact no.: +63 961 288 5782
-                        </li>
-                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
-                            <span style="margin-right: 10px;"><i class="bi bi-linkedin"></i></span>
-                            LinkedIn: in/arnolddc24
-                        </li>
-                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
-                            <span style="margin-right: 10px;"><i class="bi bi-facebook"></i></span>
-                            FB: facebook.com/acel.dc
-                        </li>
-                    </ul>
-                </div>  
+                        <div class="image-wrap"> <img id="myimage2"  src="pictures/ako1.jpg" alt="Profile Picture"/>
+                            <div class="glass-box">
+                                <div id="names">Arnold Dela Cruz</div>
+                                <div class="p-0 m-0 d-flex justify-content-center">
+                                    <button id="btnmess">About me</button>
+                                    <button id="btncont">Qualification</button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="about-text">
+                            <span class="large-h">Hi,</span> I am ARNOLD, a jobseeker eager to apply my knowledge and skills in a dynamic company. I hold a Bachelor of Science in Information Technology and possess above-average skills in window and web-based programming. I have proficiency in <strong>HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, MySQL, and VB.NET, along with fundamental knowledge of Python, Java, C++, and C#</strong>. While studying, I also accepted projects to create information systems for students from other schools, gaining practical experience in real-world applications of my skills. Upon graduation, I received multiple awards, including Best in Window-based Programming, Web-based Programming, Web Designing, Database Designing, System Analysis and Design, along with the Presidential Award for Community Service, Graphic and Layout Artist Award, and Programmer of the Year.
+                        </p>
+                        <div id = "coll" class="collapse">
+                        <p class="about-text">
+                           I started my career at the National Irrigation Administration (NIA) - Magat River Integrated Irrigation System - Dam and Reservoir Division, where I also completed my on-the-job training. I was absorbed as a Data Encoder on September 19, 2020, and was awarded Rookie of the Year in 2021. On March 13, 2022, I was promoted to Computer Operator, and on October 19, 2022, I became a Records Assistant under government service, leading the NIA-MARIIS-DRD Personnel and Records Unit. I resigned on June 30, 2024, to support my guardian duties for my son while my wife is abroad.
+                        </p>
+                     
+                            <p class="about-text">
+                                During my time at NIA-MARIIS-DRD, I developed strong organizational and technical skills, and even though my role was not directly related to my degree, I found ways to enhance my skills. I attended seminars for continued learning and automated various processes in the unit, improving service efficiency. Additionally, I assisted with computer maintenance and repairs and was part of both the Documented Information Team and Risk Management Team.
+                            </p>
+                            
+                            <p class="about-text">
+                                I am now seeking a remote opportunity that aligns with my degree, where I can continue growing and contributing as a fast learner, adaptable team player, and responsible professional. For a more detailed overview of my educational and career background, please refer to the Qualifications section in the navigation menu.
+                            </p>
+                        </div>
+                        <a href = "#coll" id = "btncollapse" data-bs-toggle="collapse">See More..</a>
+                </div>
             </div>
-            <div>
-                <div id="card4">
-                    <h2 class="d-flex justify-content-center p-0 m-0"><div id="online"></div>&nbsp;Arnold DC</h2>
-                    <div class="hr-container">
-                        <hr class="animated-hr">
-                    </div>
-                    <div class="d-flex justify-content-center p-0 m-0"><img id="myimage1" src="pictures/animatedProf1.jpg" alt="Profile Picture" style="width:10%"> </div>
-                    <div class="hr-container">
-                        <hr class="animated-hr">
-                    </div>
-                    <ul style="list-style-type: none;">
-                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
-                            <span style="margin-right: 10px;"><i class="bi bi-envelope"></i></span>
-                            Email: arnold.dc.it@gmail.com
-                        </li>
-                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
-                            <span style="margin-right: 10px;"><i class="bi bi-telephone"></i></span>
-                            Contact no.: +63 961 288 5782
-                        </li>
-                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
-                            <span style="margin-right: 10px;"><i class="bi bi-linkedin"></i></span>
-                            LinkedIn: in/arnolddc24
-                        </li>
-                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
-                            <span style="margin-right: 10px;"><i class="bi bi-facebook"></i></span>
-                            FB: facebook.com/acel.dc
-                        </li>
-                    </ul>
-                </div>  
-            </div>
+            
+        </div>
         <!-- Profile -->
+        <!-- Qualification -->
+        <div id="content2">
+           <h1><strong>QUALIFICATION</strong></h1>
+           <div id= "svg1Contain">
+            <svg id="mySvg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 50">
+                <defs>
+                    <linearGradient id="botrib" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#bb8c15;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#bb8c15;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Draw paths -->
+                <path id="myPath1" d="M 1025 25 L 1050 50 L 1075 25 L 1050 0 Z" fill="url(#botrib)"/>
+                <path id="myPath2" d="M 0 25 L 500 30 L 1000 25 L 500 20 Z" fill="url(#botrib)"/>
+                <path id="myPath3" d="M 1100 25 L 1600 30 L 2100 25 L 1600 20 Z" fill="url(#botrib)"/>
+    
+            </svg>
+           </div>
+          
+           <div id="qualif">
+                <div id="other-skills" >
+                    <div id="accordion1">
+                        <div class="card">
+                            <div class="card-header">
+                              <a class="btn">
+                                Education
+                              </a>
+                            </div>
+                            <div class="accordionChild show">
+                              <div class="card-body">
+                                <ul>
+                                    <li class = "li-title">Bachelor of Science in Information Technology
+                                        <ul>
+                                            <li class = "li-child">Cagayan Valley Computer and Information Technology College | Graduated: 2020</li>
+                                        </ul>
+                                    </li>
+                                    <li class = "li-title">Computer Systems Servicing NC II
+                                        <ul>
+                                            <li class = "li-child">Southern Isabela College of Arts and Trades | Completed: 2015</li>
+                                        </ul>
+                                    </li> 
+                                </ul>  
+                              </div>
+                            </div>
+                          </div>
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="btn">
+                              Technical Skills
+                            </a>
+                          </div>
+                          <div class="accordionChild qualCollapse">
+                            <div class="card-body">
+                                <ul>
+                                <li class = "li-title">HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, VB.net MySQL</li>
+                                <li class = "li-title">Hardware and software troubleshooting</li>
+                                <li class = "li-title">Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                                <li class = "li-title">Visual Studio Code</li>
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="btn">
+                              Administrative Skills
+                            </a>
+                          </div>
+                          <div class="accordionChild qualCollapse">
+                            <div class="card-body">
+                                <ul>
+                                    <li class = "li-title">Personnel Management & Employee Relations</li>
+                                    <li class = "li-title">Payroll Preparation & Leave Administration</li>
+                                    <li class = "li-title">Performance Evaluations & Promotion</li>
+                                    <li class = "li-title">Budgetary Requirements Preparatio</li>
+                                    <li class = "li-title">Report & Documentation Control</li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="btn">
+                              Soft Skills
+                            </a>
+                          </div>
+                          <div class="accordionChild qualCollapse">
+                            <div class="card-body">
+                                <ul>
+                                    <li class = "li-title">Problem Solving & Analytical Thinking</li>
+                                    <li class = "li-title">Time Management & Organization</li>
+                                    <li class = "li-title">Adaptability & Quick Learning</li>
+                                    <li class = "li-title">Strong Attention to Detail</li>
+                                    <li class = "li-title">Multicultural Collaboration & Communication</li>
+                                    </ul>
+                            </div>
+                          </div>
+                        </div>
+                      
+                      </div>
+                </div> 
+                <div id="work-exp">
+                    <div iclass="card" style="height: 100%;">
+                        <div class="card-header">
+                            <h1>Experience</h1>
+                        </div>
+                        <div class="card-body">
+                            <p>Test</p>
+                        </div>
+                        <div class="card-footer">
+
+                        </div>
+                    </div>
+               </div>      
+           </div>
+        </div>
+         <!-- Qualification -->
+
     </div>
-</div>
-<!-- Container for the main content -->
-<!-- JavaScript files -->
-<script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="src/js/main.js"></script>
-<!-- <script src="src/js/loading.js"></script> -->
+    <!-- Container for the main content -->
+    <!-- JavaScript files -->
+    <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/scrollreveal.min.js"></script>
+    <!-- <script src="src/js/loading.js"></script> -->
 </body>
 </html>
