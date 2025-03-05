@@ -99,6 +99,7 @@ body {
 }
 
 #card3 {
+    max-width:1080px;
     min-height: 880px;
     height: auto;
     font-family: calibri, 'arial';
