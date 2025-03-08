@@ -68,14 +68,22 @@ body {
     font-family: "Pacifico";
     margin: 1% 10% 1% 10%;
     height: auto;
+
 }
 
 #box1 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 900px;
 }
 
 #box2 {
-    flex-grow: 1; /* Makes box2 grow to take the available height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* Makes box2 grow to take the available height */
     height: auto;
 }
 
@@ -90,16 +98,18 @@ body {
     margin: 10px 10px 0px 0px;
     padding: 3%;
     width: 400px;
+    max-width: 500PX;;
 }
 
 #card2 {
+    max-width: 500PX;;
     margin: 10px 0px 10px 0px;
     padding: 10%;
     width: 400px;
 }
 
 #card3 {
-    max-width:1080px;
+    max-width:1090px;
     min-height: 880px;
     height: auto;
     font-family: calibri, 'arial';

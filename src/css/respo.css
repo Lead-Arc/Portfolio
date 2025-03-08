@@ -5,6 +5,7 @@
     }
 
     #box1 {
+      
         margin: 0px;
         order: 2;
     }
@@ -75,7 +76,13 @@
         margin: 0;
         padding: 30px;
     }
-
+    .carousel-control-prev {
+        left: 0px; /* Adjust left position */
+    }
+      
+    .carousel-control-next {
+        right: 0px; /* Adjust right position */
+    }
 }
 
 @media (max-width: 800px) {
@@ -152,7 +159,7 @@
 
     #content2 {
         padding: 50px 0 0 0;
-        margin: 0;
+        margin: 0 0 100px 0;
     }
 
     #qualif {
@@ -197,6 +204,38 @@
     .li-child {
         font-size: 15px;
     }
+    #myCarousel{
+        height: 520px;
+        width: 100%;
+      }
+    .carousel-control-prev {
+        left: 0px; /* Adjust left position */
+    }
+      
+    .carousel-control-next {
+        right: 0px; /* Adjust right position */
+    }
+    .li-function{
+        margin:0;
+        font-size: 18px;
+        list-style-type: "- ";   
+    }
+    .carousel-item{
+        padding: 20px 20px 20px 20px;
+        height:480px;
+    }
+    .carousel-item ul{
+        height: 380px;
+    }
+    #work-title{
+        font-size: 25px;
+        padding: 10px;
+        height: 55px;
+    }
+    #accordion1 .card-header a:hover {
+        color: #ffffffbf;
+        font-size: 25px;
+      }
 }
 
 @media (min-width: 801px) {
