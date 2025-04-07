@@ -54,7 +54,7 @@
     }
 
     #other-skills, #work-exp {
-        width: auto;
+        max-width: 800px;
         height: auto;
         margin: 0px;
         padding: 0px;

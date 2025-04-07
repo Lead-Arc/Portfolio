@@ -89,20 +89,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // const sr = ScrollReveal({
-    //     origin:'top',
-    //     distance:'1000px',
-    //     duration:2500,
-    //     delay:100,
-    //     reset:true
-    // });
-    // sr.reveal('#card3')
-    // sr.reveal('#card1',{origin:'left',delay:100})
-    // sr.reveal('#card2',{origin:'left',delay:100}) 
-    // sr.reveal('#card_educ',{origin:'left',delay:100})
-    // sr.reveal('#card_tech',{origin:'left',delay:200})
-    // sr.reveal('#card_admin',{origin:'left',delay:300})
-    // sr.reveal('#card_soft',{origin:'left',delay:400}) 
+    const sr = ScrollReveal({
+        origin:'top',
+        distance:'1000px',
+        duration:2500,
+        delay:100,
+        reset:true
+    });
+    sr.reveal('#card3')
+    sr.reveal('#card1',{origin:'left',delay:100})
+    sr.reveal('#card2',{origin:'left',delay:100}) 
+    sr.reveal('#card_educ',{origin:'left',delay:100})
+    sr.reveal('#card_tech',{origin:'left',delay:200})
+    sr.reveal('#card_admin',{origin:'left',delay:300})
+    sr.reveal('#card_soft',{origin:'left',delay:400}) 
+    sr.reveal('#work-exp',{origin:'right',delay:400}) 
 
     // Select all accordion headers
     const accordionHeaders = document.querySelectorAll('.card-header');
